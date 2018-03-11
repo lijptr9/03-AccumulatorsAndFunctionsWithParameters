@@ -128,6 +128,8 @@ def even_better_draw_circles(n):
     for k in range (n):
         circle_center = rg.Point(20*k, 20*k)
         circle = rg.Circle(circle_center, 20*k)
+        circle.outline_thickness = 0.5*k
+        circle.outline_color = 'pink'
         circle.attach_to(window)
         window.render(0.01*k)
 
